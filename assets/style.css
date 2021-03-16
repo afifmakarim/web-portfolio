@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Mulish', Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 20px 0; */
+    /* background-color: #111; */
+    height: 80px;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 30%;
+    justify-content: space-between;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: blue;
+}
+
+.logo {
+    width: 60px;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(
+        -45deg
+        ,#ec6809,#d1495b,#1b4079,#483033);
+    background-size: 400% 400%;
+    z-index: -9;
+    position: relative;
+    margin-top: -80px;
+}
+
+header h1 {
+    font-size: 50px;
+    line-height: 60px;
+    color: #fff;
+}
+
+header p {
+    color: #fff;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 6rem;
+    flex-grow: 20%;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+
+  .primary {
+    background-color: #40394a;
+  }
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+}
+    
+@media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+}
+
+
+/* Tab Size */
+@media screen and (max-width: 768px) {
+    nav ul {
+        width: 50%;
+    }
+}
+
+/* mobile size */
+@media screen and (max-width: 576px) {
+
+    nav ul {
+        display: none;
+    }
+}
