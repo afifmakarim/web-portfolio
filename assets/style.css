@@ -43,16 +43,19 @@ nav li a:hover {
 }
 
 header {
-    display: flex;
-    align-items: center;
-    height: 100vh;
     background: linear-gradient(
         -45deg
         ,#ec6809,#d1495b,#1b4079,#483033);
     background-size: 400% 400%;
     z-index: -9;
-    position: relative;
     margin-top: -80px;
+}
+
+header .container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 header h1 {
@@ -63,6 +66,7 @@ header h1 {
 
 header p {
     color: #fff;
+    margin-bottom: 4rem;
 }
 
 .button {
@@ -70,37 +74,64 @@ header p {
     color: white;
     padding: 15px 32px;
     text-align: center;
+    width: 15vh;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
-    margin-top: 6rem;
+    /* margin-top: 6rem; */
     flex-grow: 20%;
     border-radius: 25px;
     cursor: pointer;
   }
 
   .primary {
-    background-color: #40394a;
+    background-color: #ec6809;
   }
 
   article {
-    padding: 25px;
-    display: flex;
-    justify-content: space-between;
+    background-color: rgb(247, 247, 242);
   }
 
-  article h1 {
-      font-size: 50px;
+  .wrapper {
+    display: flex;
+    padding-bottom: 50px;
+  }
+
+  .wrapper img{
+    max-width:100%;
+    flex: 50%;
+    border-radius: 25px 50px 25px 50px;
+  }
+
+  .bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+  }
+
+  .bio h1 {
+      font-size: 40px;
       font-weight: bold;
       margin: 0;
   }
 
-  article p {
-
+  .contact ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0;
   }
+
+  .contact li a {
+    text-decoration: none;
+  }
+
 .title-section {
     text-align: center;
-    font-size: 40px;
+    font-size: 45px;
+    padding: 50px;
+    margin: 0;
 }
 
 @media (min-width: 768px) {
@@ -127,6 +158,24 @@ header p {
     nav ul {
         width: 50%;
     }
+
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .contact ul{
+        flex-direction: column;
+      }
+
+      .bio {
+          align-items: center;
+          padding: 25px 0px 0px 0px;
+      }
+
+      .bio h1 {
+          font-size: 35px;
+      }
 }
 
 /* mobile size */
@@ -134,5 +183,15 @@ header p {
 
     nav ul {
         display: none;
+    }
+
+    header h1 {
+        font-size: 25px;
+        line-height: 30px;
+        color: #fff;
+    }
+
+    .button {
+        width: 20vh;
     }
 }
