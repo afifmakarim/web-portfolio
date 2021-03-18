@@ -28,7 +28,9 @@ nav li a {
 }
 
 nav li a:hover {
-    color: blue;
+    transition: 0.3s ease-in-out;
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
 }
 
 .logo {
@@ -45,7 +47,7 @@ nav li a:hover {
 header {
     background: linear-gradient(
         -45deg
-        ,#ec6809,#d1495b,#1b4079,#483033);
+        ,#1b4079,#ffe182,#e48257,#1a1c20);
     background-size: 400% 400%;
     z-index: -9;
     margin-top: -80px;
@@ -66,6 +68,8 @@ header h1 {
 
 header p {
     color: #fff;
+    line-height: 30px;
+    font-size: 20px;
     margin-bottom: 4rem;
 }
 
@@ -83,23 +87,33 @@ header p {
     cursor: pointer;
   }
 
-  .primary {
-    background-color: #ec6809;
+  .button:hover {
+    background: #fff;
+    color: #1a1c20;
+    transition: .3s ease-in-out;
   }
 
-  article {
-    background-color: rgb(247, 247, 242);
+  .primary {
+    background-color: #1a1c20;
+  }
+
+  main#about {
+    background-color: #1a1c20;
+    color: #fff;
+    padding: 50px;
   }
 
   .wrapper {
     display: flex;
-    padding-bottom: 50px;
+  }
+
+.wrapper a {
+    color: #fff;
   }
 
   .wrapper img{
     max-width:100%;
-    flex: 50%;
-    border-radius: 25px 50px 25px 50px;
+    min-width: 300px;
   }
 
   .bio {
@@ -107,12 +121,12 @@ header p {
     flex-direction: column;
     justify-content: center;
     padding: 50px;
+    line-height: 30px;
   }
 
   .bio h1 {
       font-size: 40px;
       font-weight: bold;
-      margin: 0;
   }
 
   .contact ul{
@@ -127,11 +141,127 @@ header p {
     text-decoration: none;
   }
 
+  .contact li a:hover {
+    transition: 0.3s ease-in-out;
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+  }
+
 .title-section {
     text-align: center;
     font-size: 45px;
-    padding: 50px;
+    padding: 20px;
     margin: 0;
+    color: #fff;
+}
+
+article#skills {
+    padding: 50px;
+    background: linear-gradient(0deg, rgba(36,36,36,1) 0%, rgba(172,172,172,0) 100%), url("./images/pexels-negative-space-34153.jpg") no-repeat fixed center;
+    background-size: cover;
+}
+
+aside .progress {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 25px;
+}
+
+aside.front-end h4 {
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.value-bar {
+    height: 15px;
+    background-color: #e48257;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 25px;
+}
+
+aside.front-end {
+    margin: 20px;
+    flex-basis: 100%;
+}
+
+aside.backend {
+    margin: 20px;
+    flex-basis: 100%;
+}
+
+aside.backend h4 {
+    color: #fff;
+}
+
+article#project {
+    background-color: #1a1c20;
+    color: #fff;
+    height: 420px;
+  }
+
+  article#project .wrapper {
+    height: 420px;
+  }
+
+  aside.github {
+      flex-basis: 100%;
+      background: url("./images/pexels-bich-tran-669996.jpg") no-repeat center;
+      background-size: cover;
+  }
+
+  /* aside.github:hover {
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    background: linear-gradient(0deg, rgba(36,36,36,1) 0%, rgba(172,172,172,0) 100%), url("./images/pexels-bich-tran-669996.jpg") no-repeat center;
+  } */
+
+  aside.github h4, aside.trakteer h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    height: 100%;
+    margin: 0;
+  }
+
+  aside.github:hover {
+    text-decoration: line-through;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    background: linear-gradient(0deg, rgba(36,36,36,1) 0%, rgba(172,172,172,0) 100%), url("./images/pexels-bich-tran-669996.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  aside.trakteer {
+      flex-basis: 100%;
+      background: url("./images/pexels-miguel-á-padriñán-932261.jpg") no-repeat center;
+      background-size: cover;
+  }
+
+  aside.trakteer:hover {
+    text-decoration: line-through;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    background: linear-gradient(0deg, rgba(36,36,36,1) 0%, rgba(172,172,172,0) 100%), url("./images/pexels-miguel-á-padriñán-932261.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  footer {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 8pt;
+    background-color: #1a1c20;
+    color: #fff;
+}
+
+@media (min-width: 576px) {
+    .container {
+      width: 550px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -146,6 +276,7 @@ header p {
     }
 }
     
+
 @media (min-width: 1200px) {
     .container {
       width: 1170px;
@@ -159,9 +290,16 @@ header p {
         width: 50%;
     }
 
+    aside.front-end h4 {
+        justify-content: flex-start;
+    }
+
+    article#skills .wrapper {
+        align-items:normal;
+      }
+
     .wrapper {
         flex-direction: column;
-        align-items: center;
       }
 
       .contact ul{

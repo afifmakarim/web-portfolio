@@ -1,43 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css">
-    <title>Portfolio</title>
-</head>
-<body>
-<nav class="navbar container">
-        <img class="logo" src="./assets/images/logo.png" alt="logo">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Showcase</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-</nav>
-<header id="#header">
-<div class="container">
-    <h1>Hi! I'm Afif.<br> i build web and mobile apps in my free time.</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur hic perferendis excepturi?<br>Fugit, sequi id, molestias nisi maxime aut sed cupiditate voluptateo, aliquam tempore facere vitae! Commodi.</p>
-    <a href="#" class="button primary">Learn More &#8594;</a>
-</div>
-</header>
-<article>
-    <h1 class="title-section">About Me</h1>
-    <div class="wrapper container">
-        <img src="https://picsum.photos/id/684/600/400?grayscale" alt="">
-        <div class="bio">
-            <h1>Afif Makarim</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus rem, odio ipsa sequi beatae libero dicta, tempore est cumque ducimus cum, sapiente sint? Iure saepe amet harum eligendi quae fuga!</p>    
-            <div class="contact">
-                <ul>
-                    <li><a href="#">Email : afifmakarim88@gmail.com</a></li>
-                    <li><a href="#">Phone : +6281341692502</a></li>
-                    <li><a href="#">IG : afifmakarim88</a></li>
-                </ul>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/style.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous"/>
+
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <nav class="navbar container">
+            <img class="logo" src="./assets/images/logo.png" alt="logo">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Showcase</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <header id="#header">
+            <div class="container">
+                <h1>Hi! I'm Afif.<br>
+                    i build web and mobile apps in my free time.</h1>
+                <p>Based in the South Jakarta, Indonesia.<br>
+                    If you'd like to start a new project, need help with an existing project or have any other enquiry, please get in touch.
+                </p>
+                <a href="#" class="button primary">Learn More &#8594;</a>
             </div>
-        </div>
-        </div>
-</article>
-</body>
+        </header>
+        <main id="about">
+            <h1 class="title-section">About Me</h1>
+            <div class="wrapper container">
+                <img src="./assets/images/porto.png" alt="">
+                <aside class="bio">
+                    <h1>Afif Makarim</h1>
+                    <p>A self-motivated person with extensive knowledge of computer science. Seeking
+                        an entry position where I can utilise my skill, put my learning into practice
+                        and make a contribution.
+                    </p>
+                    <div class="contact">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-envelope"></i>
+                                    afifmakarim88@gmail.com</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-phone-alt"></i>
+                                    +(62)81341692502</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                    afifmakarim88</a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </main>
+        <article id="skills">
+            <h1 class="title-section">My Skills</h1>
+            <div class="wrapper container">
+                <aside class="front-end">
+                    <h4>HTML & CSS</h4>
+                    <div class="progress">
+                        <div class="value-bar" style="width: 80%;"></div>
+                    </div>
+                    <h4>ReactJS</h4>
+                    <div class="progress">
+                        <div class="value-bar" style="width:60%;"></div>
+                    </div>
+                    <h4>React Native</h4>
+                    <div class="progress">
+                        <div class="value-bar" style="width:65%;"></div>
+                    </div>
+                    <h4>Figma</h4>
+                    <div class="progress">
+                        <div class="value-bar" style="width:65%;"></div>
+                    </div>
+                    <h4>Adobe Photoshop</h4>
+                    <div class="progress">
+                        <div class="value-bar" style="width:70%;"></div>
+                    </div>
+                </aside>
+                <aside class="backend">
+                    <h4>PHP</h4>
+                    <div class="progress">
+                        <div class="value-bar" style="width:75%;"></div>
+                    </div>
+                    <h4>NodeJS</h4>
+                    <div class="progress">
+                        <div class="value-bar" style="width:65%;"></div>
+                    </div>
+                    <h4>MySQL</h4>
+                    <div class="progress">
+                        <div class="value-bar" style="width: 70%;"></div>
+                    </div>
+                    <h4>MongoDB</h4>
+                    <div class="progress">
+                        <div class="value-bar" style="width: 70%;"></div>
+                    </div>
+                    <h4>Linux</h4>
+                    <div class="progress">
+                        <div class="value-bar" style="width: 65%;"></div>
+                    </div>
+                </aside>
+            </div>
+        </article>
+        <article id="project">
+            <div class="wrapper">
+                <aside class="github">
+                    <h4><i class="fab fa-github"></i> Github</h4>
+                </aside>
+                <aside class="trakteer">
+                    <h4><i class="fas fa-at"></i>Trakteer</h4>
+                </aside>
+            </div>
+        </article>
+        <footer>
+            <div class="container">
+                Copyright 2021 • All Rights Reserved by Afif Makarim
+            </div>
+        </footer>
+    </body>
 </html>
