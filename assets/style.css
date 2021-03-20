@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body, p {
     padding: 0;
     margin: 0;
@@ -109,6 +113,7 @@ header p {
 
 .wrapper a {
     color: #fff;
+    text-decoration: none;
   }
 
   .wrapper img{
@@ -248,15 +253,28 @@ article#project {
     background-size: cover;
   }
 
-  footer {
-    height: 80px;
+  .social-media {
     display: flex;
-    align-items: center;
-    text-align: center;
+    justify-content: space-evenly;
+    padding: 25px;
+    font-size: 50px;
+  }
+
+  .social-media a {
+    color: #e48257;
+  }
+
+  footer {
+    display: flex;
     font-size: 8pt;
     background-color: #1a1c20;
+    text-align: center;
     color: #fff;
-}
+  }
+
+  footer p {
+    margin: 20px;
+  }
 
 @media (min-width: 576px) {
     .container {
@@ -320,7 +338,13 @@ article#project {
 @media screen and (max-width: 576px) {
 
     nav ul {
-        display: none;
+        /* display: none; */
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .logo {
+      display: none;
     }
 
     header h1 {
